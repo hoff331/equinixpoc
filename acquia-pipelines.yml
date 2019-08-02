@@ -9,6 +9,7 @@ services:
   - php:
       version: 7.2
 cde-databases:
+  - equinixpoc
   - equinix01
   - equinix02
 events:
