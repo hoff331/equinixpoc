@@ -3,11 +3,11 @@
 #
 # If you'd like a project which sets up testing and Pipelines for you, consider
 # using Acquia BLT: https://github.com/acquia/blt
-version: 1.1.0
+version: 1.2.0
 services:
   - mysql
   - php:
-      version: 7.1
+      version: 7.2
 
 events:
   build:
@@ -42,3 +42,12 @@ events:
           type: script
           script:
             - composer install --no-dev --optimize-autoloader
+  post-deploy:
+    steps:
+      # Deploy the build artifact to an on-demand environment,
+      # and sync the specified databases.
+      - deploy:
+          script:
+            - pipelines-deploy
+            # See https://docs.acquia.com/acquia-cloud/develop/pipelines/databases/
+            # - pipelines-sync-dbs
