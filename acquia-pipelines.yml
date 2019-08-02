@@ -8,7 +8,9 @@ services:
   - mysql
   - php:
       version: 7.2
-
+cde-databases:
+  - equinix01
+  - equinix02
 events:
   build:
     steps:
