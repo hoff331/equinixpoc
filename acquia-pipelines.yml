@@ -52,3 +52,4 @@ events:
             - pipelines-deploy
             # See https://docs.acquia.com/acquia-cloud/develop/pipelines/databases/
             - pipelines-sync-dbs equinixpoc
+            - drush cr
