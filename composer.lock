@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b73b4827ddaf449f70edebd296f8251f",
+    "content-hash": "c9a969b8d0263b199a181ecc22c6d6af",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -85,6 +85,117 @@
             ],
             "description": "The best of Drupal, curated by Acquia",
             "time": "2019-07-26T15:28:28+00:00"
+        },
+        {
+            "name": "akamai-open/edgegrid-auth",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/akamai/AkamaiOPEN-edgegrid-php.git",
+                "reference": "7ff4d64153cf432bacfa3ffd70393bea3a930f36"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/akamai/AkamaiOPEN-edgegrid-php/zipball/7ff4d64153cf432bacfa3ffd70393bea3a930f36",
+                "reference": "7ff4d64153cf432bacfa3ffd70393bea3a930f36",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^1.9",
+                "kherge/box": "^2.5",
+                "phpunit/phpunit": "~4.7",
+                "squizlabs/php_codesniffer": "^2.3"
+            },
+            "suggest": {
+                "akamai-open/edgegrid-client": "Provide a fully featured HTTP client & CLI pre-configured with EdgeGrid authentication. (PHP 5.5+)"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Akamai\\Open\\EdgeGrid\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Davey Shafik",
+                    "email": "dshafik@akamai.com"
+                }
+            ],
+            "description": "Implements the Akamai {OPEN} EdgeGrid Authentication specified by https://developer.akamai.com/introduction/Client_Auth.html",
+            "homepage": "https://github.com/akamai-open/AkamaiOPEN-edgegrid-php",
+            "keywords": [
+                "Authentication",
+                "akamai",
+                "edgegrid",
+                "open"
+            ],
+            "time": "2017-09-01T07:02:30+00:00"
+        },
+        {
+            "name": "akamai-open/edgegrid-client",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/akamai/AkamaiOPEN-edgegrid-php-client.git",
+                "reference": "a368473f0f73fab96ffee03ee40d2f18694ff526"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/akamai/AkamaiOPEN-edgegrid-php-client/zipball/a368473f0f73fab96ffee03ee40d2f18694ff526",
+                "reference": "a368473f0f73fab96ffee03ee40d2f18694ff526",
+                "shasum": ""
+            },
+            "require": {
+                "akamai-open/edgegrid-auth": "^1.0.0",
+                "guzzlehttp/guzzle": "^6.1.1",
+                "league/climate": "~3.2",
+                "monolog/monolog": "^1.15",
+                "php": ">=5.5",
+                "psr/log": "^1.0"
+            },
+            "require-dev": {
+                "apigen/apigen": "^4.0.0",
+                "friendsofphp/php-cs-fixer": "^1.9",
+                "kherge/box": "^2.5",
+                "phpunit/phpunit": "~4.7",
+                "squizlabs/php_codesniffer": "^2.3"
+            },
+            "bin": [
+                "bin/http"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Akamai\\Open\\EdgeGrid\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Davey Shafik",
+                    "email": "dshafik@akamai.com"
+                }
+            ],
+            "description": "Implements the Akamai {OPEN} EdgeGrid Authentication specified by https://developer.akamai.com/introduction/Client_Auth.html",
+            "homepage": "https://github.com/akamai-open/AkamaiOPEN-edgegrid-php",
+            "keywords": [
+                "Authentication",
+                "akamai",
+                "client",
+                "edgegrid",
+                "open"
+            ],
+            "time": "2017-09-01T07:23:52+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -531,6 +642,65 @@
             ],
             "description": "Provides a way to patch Composer packages.",
             "time": "2018-10-24T15:51:16+00:00"
+        },
+        {
+            "name": "d8-contrib-modules/cloudflarephpsdk",
+            "version": "1.0.0-alpha5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/d8-contrib-modules/cloudflarephpsdk.git",
+                "reference": "4bd00bacdb3aa56e88cbd871c3db7925eb0a9e66"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/d8-contrib-modules/cloudflarephpsdk/zipball/4bd00bacdb3aa56e88cbd871c3db7925eb0a9e66",
+                "reference": "4bd00bacdb3aa56e88cbd871c3db7925eb0a9e66",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.1",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "drupal/coder": "8.2.*",
+                "pdepend/pdepend": "1.1.*",
+                "phing/phing": "2.11.*",
+                "phploc/phploc": "2.0.*@dev",
+                "phpmd/phpmd": "1.*",
+                "phpunit/phpunit": "~4.8",
+                "sebastian/phpcpd": "2.0.*@dev",
+                "squizlabs/php_codesniffer": "2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CloudFlarePhpSdk\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Weingarten",
+                    "email": "aweingarten@users.noreply.github.com",
+                    "homepage": "https://github.com/aweingarten"
+                }
+            ],
+            "description": "PHP client for interacting with CloudFlare's SDK. CloudFlare is a copyright of CloudFlare, Inc.  The authors of this tool has no association with CloudFlare, Inc.",
+            "homepage": "https://github.com/d8-contrib-modules/cloudflarephpsdk",
+            "keywords": [
+                "Cloud Flare",
+                "client",
+                "cloudflare",
+                "curl",
+                "framework",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2016-11-01T00:34:10+00:00"
         },
         {
             "name": "defuse/php-encryption",
@@ -1510,6 +1680,106 @@
             }
         },
         {
+            "name": "drupal/akamai",
+            "version": "3.0.0-alpha5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/akamai.git",
+                "reference": "8.x-3.0-alpha5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/akamai-8.x-3.0-alpha5.zip",
+                "reference": "8.x-3.0-alpha5",
+                "shasum": "90840af46fe396900fef85aa4496a7df11a45f34"
+            },
+            "require": {
+                "akamai-open/edgegrid-auth": "~1.0.1",
+                "akamai-open/edgegrid-client": "~1.0.0",
+                "drupal/core": "~8.5"
+            },
+            "require-dev": {
+                "drupal/key": "~1.8",
+                "drupal/purge": "3.0-beta8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.0-alpha5",
+                    "datestamp": "1564523285",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Barrett",
+                    "homepage": "https://www.drupal.org/user/52745"
+                },
+                {
+                    "name": "Bluff",
+                    "homepage": "https://www.drupal.org/user/3535221"
+                },
+                {
+                    "name": "Cameron Tod",
+                    "homepage": "https://www.drupal.org/user/129588"
+                },
+                {
+                    "name": "Elijah Lynn",
+                    "homepage": "https://www.drupal.org/user/353190"
+                },
+                {
+                    "name": "WidgetsBurritos",
+                    "homepage": "https://www.drupal.org/user/2508346"
+                },
+                {
+                    "name": "bighappyface",
+                    "homepage": "https://www.drupal.org/user/2513682"
+                },
+                {
+                    "name": "febbraro",
+                    "homepage": "https://www.drupal.org/user/43670"
+                },
+                {
+                    "name": "jtsnow",
+                    "homepage": "https://www.drupal.org/user/171614"
+                },
+                {
+                    "name": "pobster",
+                    "homepage": "https://www.drupal.org/user/25159"
+                },
+                {
+                    "name": "tobby",
+                    "homepage": "https://www.drupal.org/user/154797"
+                }
+            ],
+            "description": "Cache Control integration with Akamai CDN. Akamai is a registered trademark of Akamai Technologies, Inc.",
+            "homepage": "https://github.com/d8-contrib-modules/akamai",
+            "keywords": [
+                "Akamai",
+                "CDN",
+                "Drupal",
+                "Purge"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/akamai"
+            }
+        },
+        {
             "name": "drupal/bg_image_formatter",
             "version": "1.10.0",
             "source": {
@@ -1702,6 +1972,88 @@
                 "source": "https://git.drupalcode.org/project/claro",
                 "docs": "https://www.drupal.org/docs/8/modules/claro",
                 "issues": "https://www.drupal.org/project/issues/claro"
+            }
+        },
+        {
+            "name": "drupal/cloudflare",
+            "version": "1.0.0-alpha11",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/cloudflare.git",
+                "reference": "8.x-1.0-alpha11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/cloudflare-8.x-1.0-alpha11.zip",
+                "reference": "8.x-1.0-alpha11",
+                "shasum": "ae775077bd5e7cf166f7e77ed827efc591b3a2bf"
+            },
+            "require": {
+                "d8-contrib-modules/cloudflarephpsdk": "^1",
+                "drupal/core": "~8.0",
+                "drupal/ctools": "^3.0"
+            },
+            "require-dev": {
+                "drupal/purge": "^3.0@beta"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha11",
+                    "datestamp": "1552652584",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Brian294",
+                    "homepage": "https://www.drupal.org/user/348040"
+                },
+                {
+                    "name": "Chris Charlton",
+                    "homepage": "https://www.drupal.org/user/17089"
+                },
+                {
+                    "name": "Wim Leers",
+                    "homepage": "https://www.drupal.org/user/99777"
+                },
+                {
+                    "name": "adam.weingarten",
+                    "homepage": "https://www.drupal.org/user/2677413"
+                },
+                {
+                    "name": "dietric@gmail.com",
+                    "homepage": "https://www.drupal.org/user/611306"
+                },
+                {
+                    "name": "phayes",
+                    "homepage": "https://www.drupal.org/user/47098"
+                },
+                {
+                    "name": "vijaycs85",
+                    "homepage": "https://www.drupal.org/user/93488"
+                }
+            ],
+            "description": "Drupal module for interacting with CloudFlare's SDK. CloudFlare is a copyright of CloudFlare, Inc.  The authors of this tool has no association with CloudFlare, Inc.",
+            "homepage": "https://www.drupal.org/project/cloudflare",
+            "keywords": [
+                "CDN",
+                "Cloud Flare",
+                "CloudFlare",
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/cloudflare"
             }
         },
         {
@@ -6405,6 +6757,67 @@
             "time": "2019-05-24T18:30:49+00:00"
         },
         {
+            "name": "league/climate",
+            "version": "3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/climate.git",
+                "reference": "0d2fdbf8829f60f6ba6433df68d6f3fe1271b8e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/climate/zipball/0d2fdbf8829f60f6ba6433df68d6f3fe1271b8e6",
+                "reference": "0d2fdbf8829f60f6ba6433df68d6f3fe1271b8e6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1",
+                "psr/log": "^1.0",
+                "seld/cli-prompt": "^1.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "^1.4",
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^5.7.16"
+            },
+            "suggest": {
+                "ext-mbstring": "If ext-mbstring is not available you MUST install symfony/polyfill-mbstring"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\CLImate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Craig Duncan",
+                    "role": "Developer",
+                    "email": "git@duncanc.co.uk",
+                    "homepage": "https://github.com/duncan3dc"
+                },
+                {
+                    "name": "Joe Tannenbaum",
+                    "role": "Developer",
+                    "email": "hey@joe.codes",
+                    "homepage": "http://joe.codes/"
+                }
+            ],
+            "description": "PHP's best friend for the terminal. CLImate allows you to easily output colored text, special formats, and more.",
+            "keywords": [
+                "cli",
+                "colors",
+                "command",
+                "php",
+                "terminal"
+            ],
+            "time": "2019-02-10T18:25:19+00:00"
+        },
+        {
             "name": "league/event",
             "version": "2.2.0",
             "source": {
@@ -6634,6 +7047,84 @@
                 "html"
             ],
             "time": "2016-07-25T17:07:32+00:00"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "1.24.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266",
+                "reference": "bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "~1.0"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^2.4.9 || ^3.0",
+                "doctrine/couchdb": "~1.0@dev",
+                "graylog2/gelf-php": "~1.0",
+                "jakub-onderka/php-parallel-lint": "0.9",
+                "php-amqplib/php-amqplib": "~2.4",
+                "php-console/php-console": "^3.1.3",
+                "phpunit/phpunit": "~4.5",
+                "phpunit/phpunit-mock-objects": "2.3.0",
+                "ruflin/elastica": ">=0.90 <3.0",
+                "sentry/sentry": "^0.13",
+                "swiftmailer/swiftmailer": "^5.3|^6.0"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mongo": "Allow sending log messages to a MongoDB server",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server via PHP Driver",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+                "php-console/php-console": "Allow sending log messages to Google Chrome",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
+                "sentry/sentry": "Allow sending log messages to a Sentry server"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "http://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "time": "2018-11-05T09:00:11+00:00"
         },
         {
             "name": "oomphinc/composer-installers-extender",
@@ -7271,6 +7762,54 @@
             ],
             "description": "A polyfill for getallheaders.",
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "seld/cli-prompt",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/cli-prompt.git",
+                "reference": "a19a7376a4689d4d94cab66ab4f3c816019ba8dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/cli-prompt/zipball/a19a7376a4689d4d94cab66ab4f3c816019ba8dd",
+                "reference": "a19a7376a4689d4d94cab66ab4f3c816019ba8dd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Seld\\CliPrompt\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be"
+                }
+            ],
+            "description": "Allows you to prompt for user input on the command line, and optionally hide the characters they type",
+            "keywords": [
+                "cli",
+                "console",
+                "hidden",
+                "input",
+                "prompt"
+            ],
+            "time": "2017-03-18T11:32:45+00:00"
         },
         {
             "name": "solarium/solarium",
@@ -10819,7 +11358,10 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/akamai": 15,
+        "drupal/cloudflare": 15
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
