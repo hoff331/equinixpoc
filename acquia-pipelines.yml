@@ -10,8 +10,6 @@ services:
       version: 7.2
 cde-databases:
   - equinixpoc
-  - equinix01
-  - equinix02
 events:
   build:
     steps:
@@ -54,3 +52,19 @@ events:
             - pipelines-deploy
             # See https://docs.acquia.com/acquia-cloud/develop/pipelines/databases/
             - pipelines-sync-dbs equinixpoc
+
+  # When a GitHub pull request is merged, this deletes the coresponding ODE.
+  # https://docs.acquia.com/acquia-cloud/develop/pipelines/commands/
+  pr-merged:
+      steps:
+      - deploy:
+          script:
+              - pipelines-deploy
+
+  # When a GitHub pull request is closed, this deletes the coresponding ODE.
+  # https://docs.acquia.com/acquia-cloud/develop/pipelines/commands/
+  pr-closed:
+      steps:
+      - deploy:
+          script:
+              - pipelines-deploy
