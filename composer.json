@@ -13,7 +13,9 @@
         "drupal/config_split": "^1.4",
         "drupal/http_cache_control": "^1.0",
         "drupal/akamai": "^3.0@alpha",
-        "drupal/cloudflare": "^1.0@alpha"
+        "drupal/cloudflare": "^1.0@alpha",
+        "drupal/tmgmt_smartling": "^3.19",
+        "drupal/tmgmt": "^1.10"
     },
     "require-dev": {
         "drush/drush": "^9.0"
