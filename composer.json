@@ -15,7 +15,8 @@
         "drupal/akamai": "^3.0@alpha",
         "drupal/cloudflare": "^1.0@alpha",
         "drupal/tmgmt_smartling": "^3.19",
-        "drupal/tmgmt": "^1.10"
+        "drupal/tmgmt": "^1.10",
+        "drupal/marketo_ma": "^2.0@alpha"
     },
     "require-dev": {
         "drush/drush": "^9.0"
