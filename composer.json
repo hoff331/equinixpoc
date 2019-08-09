@@ -15,7 +15,11 @@
         "drupal/akamai": "^3.0@alpha",
         "drupal/cloudflare": "^1.0@alpha",
         "drupal/tmgmt_smartling": "^3.19",
-        "drupal/tmgmt": "^1.10"
+        "drupal/tmgmt": "^1.10",
+        "drupal/marketo_ma": "^2.0@alpha",
+        "drupal/marketo_ma_webform": "^2.0@alpha",
+        "drupal/marketo_ma_contact_block": "^2.0@alpha",
+        "drupal/webform": "^5.3"
     },
     "require-dev": {
         "drush/drush": "^9.0"
