@@ -17,7 +17,8 @@
         "drupal/tmgmt": "^1.10",
         "drupal/tmgmt_smartling": "^3.19",
         "drupal/marketo_ma": "^2.0@alpha",
-        "drupal/webform": "^5.3"
+        "drupal/webform": "^5.3",
+        "drupal/entity_usage": "^2.0@beta"
     },
     "require-dev": {
         "drush/drush": "^9.0"
